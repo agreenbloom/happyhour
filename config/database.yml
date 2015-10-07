@@ -15,17 +15,16 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgis
+  adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
 
+
 development:
   <<: *default
   database: voting_development
-  schema_search_path: "public,postgis"
-  script_dir: /opt/local/share/contrib/postgis-2.1.7
 
 
   # The specified database role being used to connect to postgres.
@@ -61,8 +60,7 @@ development:
 test:
   <<: *default
   database: voting_test
-  schema_search_path: "public,postgis"
-  script_dir: /opt/local/share/contrib/postgis-2.1
+
 
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -89,7 +87,4 @@ production:
   database: voting_production
   username: vote
   password: <%= ENV['VOTE_DATABASE_PASSWORD'] %>
-  su_username: geo_rails_test_creator
-  su_password: <%= ENV['VOTE_DATABASE_PASSWORD']
 
-  schema_search_path: "public,postgis"
