@@ -27,7 +27,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'govkit-ca'
 gem 'httparty'
 
+gem 'rgeo'
+gem 'rgeo-activerecord'
+gem 'activerecord-postgis-adapter', '~> 3.0.0.beta1'
+
 gem 'bourbon'
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

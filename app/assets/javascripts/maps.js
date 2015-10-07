@@ -6,4 +6,21 @@ $(document).on('ready', function(){
   var map = L.mapbox.map('map-one', 'mapbox.streets')
     .setView([47.108,-86.561], 5);
 
-})
+  function mapData(data) {
+
+  window.data = data;
+
+
+  $.ajax({
+    type: "GET",
+    dataType: "jsonp",
+    cache: true,
+    url: "https://represent.opennorth.ca/boundary-sets/federal-electoral-districts/?format=apibrowser",
+
+    success: function(data) {
+      data = data['data'];
+      mapData(data);
+    }
+  });
+}
+});
