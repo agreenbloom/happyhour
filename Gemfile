@@ -29,7 +29,7 @@ gem 'httparty'
 
 gem 'rgeo'
 gem 'rgeo-activerecord'
-gem 'activerecord-postgis-adapter', '~> 3.0.0.beta1'
+gem 'activerecord-postgis-adapter'
 
 gem 'bourbon'
 

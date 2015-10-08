@@ -160,7 +160,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-postgis-adapter (~> 3.0.0.beta1)
+  activerecord-postgis-adapter
   bourbon
   byebug
   govkit-ca
