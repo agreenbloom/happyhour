@@ -1,0 +1,2 @@
+module YelpRestarauntsHelper
+end

@@ -37,6 +37,8 @@ gem 'geocoder'
 
 gem "figaro"
 
+gem 'yelp', require: 'yelp'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -1,0 +1,4 @@
+<% @happy_hours.each do |happy_hour| %>
+  <div class = "happy_hour">
+    <% result = Yelp.client.business(happy_hour.yelp_id) %>
+  </div>
