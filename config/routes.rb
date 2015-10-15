@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root 'maps#index'
 
+  # get 'happyhour' => 'HappyHours#index'
+  resources :happyhours
   resources :locations
 
   # The priority is based upon order of creation: first created -> highest priority.
