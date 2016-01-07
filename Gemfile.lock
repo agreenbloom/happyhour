@@ -30,9 +30,6 @@ GEM
       activemodel (= 4.2.2)
       activesupport (= 4.2.2)
       arel (~> 6.0)
-    activerecord-postgis-adapter (3.0.0)
-      activerecord (~> 4.2)
-      rgeo-activerecord (~> 4.0)
     activesupport (4.2.2)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
@@ -66,10 +63,6 @@ GEM
     geocoder (1.2.11)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
-    govkit-ca (0.0.15)
-      faraday
-      httparty (~> 0.10.0)
-      nokogiri (~> 1.6.0)
     httparty (0.10.2)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
@@ -124,10 +117,6 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rdoc (4.2.0)
-    rgeo (0.4.0)
-    rgeo-activerecord (4.0.0)
-      activerecord (~> 4.2)
-      rgeo (~> 0.3)
     sass (3.4.18)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -170,19 +159,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-postgis-adapter
   bourbon
   byebug
   figaro
   geocoder
-  govkit-ca
   httparty
   jbuilder (~> 2.0)
   jquery-rails
   pg
   rails (= 4.2.2)
-  rgeo
-  rgeo-activerecord
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

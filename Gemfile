@@ -24,12 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 
-gem 'govkit-ca'
 gem 'httparty'
-
-gem 'rgeo'
-gem 'rgeo-activerecord'
-gem 'activerecord-postgis-adapter'
 
 gem 'bourbon'
 
